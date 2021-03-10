@@ -1,0 +1,10 @@
+var currentMarketPrice = prompt("current price?:")
+var entryShareSize = prompt("how many shares are you buying?:")
+var entrycost = currentMarketPrice * entryShareSize
+var currentShareSize = prompt('current share size?:')
+var currentAveragePrice = prompt('current average price?:')
+var currentcost = Number(currentShareSize) * Number(currentAveragePrice)
+var positionCost = entrycost + currentcost
+var postionShareSize = Number(entryShareSize) + Number(currentShareSize)
+var newAveragePrice = positionCost / postionShareSize
+console.log('position Cost:', positionCost , "\n" + "postionShareSize:" , postionShareSize , "\n" + 'newAveragePrice:' , newAveragePrice)
